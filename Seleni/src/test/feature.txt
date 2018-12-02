@@ -1,0 +1,12 @@
+@feature
+
+Feature: Use price and brand search
+
+
+	Scenario: User navigates to shop section and uses brand and price search to specify products
+		Given user is on home-page
+		When customer navigates to "Mens shoes" section
+		And specifies brands "Firetrap, Skechers" in selection menu
+		And enters minimum price "30" euros in price selection
+		And enters maximum price "60" euros in price selection
+		Then products are displayed correctly
